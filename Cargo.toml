@@ -1,11 +1,5 @@
-[package]
-name = "mt4_server_api"
-version = "0.1.0"
-edition = "2021"
-
-[dependencies]
-mt4_server_api_macros = {path = "../mt4_server_api_macros"}
-lazy_static = "1.4.0"
-
-[build-dependencies]
-bindgen = "0.59.2"
+[workspace]
+members = [
+    "mt4_server_api",
+    "mt4_server_api_bindings"
+]
